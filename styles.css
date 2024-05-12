@@ -61,17 +61,18 @@ button {
     color: #fff;
     border-radius: 10px;
     transition: all 0.45s ease 0s;
-    width: 94;
-    height: 78;
+    width: 94px;
+    height: 78px;
     font-size: 20px;
     padding: 8px;
     margin: auto;
 }
 
-/*buttton img {
+buttton img {
     width: 94px;
     height: 78px;
-}*/
+}
+
 
 ul li {
     list-style: none;
