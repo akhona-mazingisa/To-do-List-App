@@ -40,6 +40,8 @@ body {
     justify-content: space-between;
     background: #0D0714;
     border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
 }
 
 input {
@@ -100,6 +102,7 @@ ul li.checked {
 }
 
 ul li.checked::before {
+    background-image: url(assets/check.png);
     width: 20px;
     height: 20px;
 }
