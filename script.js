@@ -9,7 +9,7 @@ function addTask() {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
-        var img = document.createElement("img");
+        var img = document.createElement("+");
         img.src = "assets/delete.png";
         li.appendChild(img);
     }
@@ -22,7 +22,7 @@ listContainer.addEventListener("click", function(event){
         event.target.classList.toggle("checked");
         saveData();
     }
-    else if(event.target.tagName === "img"){
+    else if(event.target.tagName === "+"){
         event.target.parentElement.remove();
         saveData();
     }
