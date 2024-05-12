@@ -1,7 +1,7 @@
 const inputBox = document.getElementById("input-box"); 
 const listContainer = document.getElementById("list-container"); 
 
-function addTask() {
+function addTask(event) {
     if (inputBox.value === ''){
         alert("Add a new task!");
     }
@@ -9,20 +9,20 @@ function addTask() {
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
-        var img = document.createElement("img");
-        img.src = "assets/delete.png";
-        li.appendChild(img);
+        const todoDiv = document.createElement("div");
+        li.appendChild(newTodo);
     }
+
     inputBox.value = "";
     saveData();
 }
 
-listContainer.addEventListener("click", function(event){
+list-container.addEventListener("click", function(event){
     if(event.target.tagName === "li"){
         event.target.classList.toggle("checked");
         saveData();
     }
-    else if(event.target.tagName === "img"){
+    else if(event.target.tagName === "+"){
         event.target.parentElement.remove();
         saveData();
     }
