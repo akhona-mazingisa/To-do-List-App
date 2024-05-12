@@ -18,11 +18,11 @@ function addTask() {
 }
 
 listContainer.addEventListener("click", function(e){
-    if(e.target.tagName === "li"){
+    if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
         saveData();
     }
-    else if(e.target.tagName === "img"){
+    else if(e.target.tagName === "IMG"){
         e.target.parentElement.remove();
         saveData();
     }
