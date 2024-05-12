@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background: #0D0714;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 100px;
+}
+
+.container {
+    height: 100%;
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    float: right;
+}
+
+#inputField {
+    background: #0D0714;
+    border: 1px solid #46345F;
+    border-radius: 10px;
+    margin: 6px;
+    padding: 10px;
+    display: block;
+    width: 675%;
+    height: 85%;
+    align-items: center;
+    font-size: 15px;
+    color: #9672C4;
+}
+
+#addTodo {
+    background: #9F79CF;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.45s ease 0s;
+    width: 94;
+    height: 78;
+    font-size: 20px;
+    padding: 8px;
+    margin: auto;
+}
+
+.to-dos {
+    margin-top: 25px;
+}
+
+.paragraph-styling {
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.fa-check, 
+.fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+.fa-check {
+    right: 40px;
+    color: #46345F; 
+}
+
+.fa-trash {
+    right: 15px;
+    color: #46345F; 
+}
+
+.checked {
+    text-decoration: line-through;
+    transition: 0.2s;
+}
