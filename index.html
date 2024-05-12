@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-do List</title>
     <link rel="stylesheet" type="text/css" href="./styles.css">
-   
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <script type="module" crossorigin src="/assets/index-0c49c13c.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="To-Do">
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add a new task" required size="40" >
-                <button type="button" onClick="addTask()"> + </button>
+                <button type="button" onClick="addTask()" class="button"> +
+                    <img src="image/svg+xml" alt="+">
+                 </button>
             </div>
                 <ul id="list-container">
                     <li class="checked">Task 1</li>
