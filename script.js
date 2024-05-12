@@ -1,29 +1,29 @@
 const inputBox = document.getElementById("input-box"); 
 const listContainer = document.getElementById("list-container"); 
 
-function addTask(event) {
+function addTask() {
     if (inputBox.value === ''){
-        alert("Add a new task!");
+        alert("Add a task!");
     }
-    else {
+    else{
         let li = document.createElement("li");
         li.innerHTML = inputBox.value;
         listContainer.appendChild(li);
-        const todoDiv = document.createElement("div");
-        li.appendChild(newTodo);
+        var img = document.createElement("img");
+        img.src = "assets/delete.png";
+        li.appendChild(img);
     }
-
     inputBox.value = "";
     saveData();
 }
 
-list-container.addEventListener("click", function(event){
-    if(event.target.tagName === "li"){
-        event.target.classList.toggle("checked");
+listContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "li"){
+        e.target.classList.toggle("checked");
         saveData();
     }
-    else if(event.target.tagName === "+"){
-        event.target.parentElement.remove();
+    else if(e.target.tagName === "img"){
+        e.target.parentElement.remove();
         saveData();
     }
 }, false);
